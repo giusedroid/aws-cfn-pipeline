@@ -1,0 +1,12 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Parameters:
+  Branch:
+    Type: 'String'
+Resources:
+  ASampleBucket:
+    Type: AWS::S3::Bucket
+Outputs:
+  Branch:
+    Value: !Ref Branch
+  DeploymentRegion:
+    Value: !Ref AWS::Region
