@@ -1,5 +1,7 @@
 AWSTemplateFormatVersion: '2010-09-09'
 Parameters:
+  CommitId:
+    Type: 'String'
   Branch:
     Type: 'String'
 Resources:
@@ -10,3 +12,5 @@ Outputs:
     Value: !Ref Branch
   DeploymentRegion:
     Value: !Ref AWS::Region
+  CommitId:
+    Value: !Ref CommitId
